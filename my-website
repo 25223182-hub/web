@@ -1,0 +1,219 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/25223182-hub/web/blob/main/my-website\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "%%html\n",
+        "<!doctype html>\n",
+        "<html lang=\"ja\">\n",
+        "<head>\n",
+        "  <meta charset=\"utf-8\">\n",
+        "  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n",
+        "  <title>わたしのページ</title>\n",
+        "  <style>\n",
+        "    body {\n",
+        "      font-family: sans-serif;\n",
+        "      line-height: 1.7;\n",
+        "      color: #222;\n",
+        "    }\n",
+        "\n",
+        "    h1 {\n",
+        "      color: #1a3d7c;\n",
+        "    }\n",
+        "\n",
+        "    h2 {\n",
+        "      margin-top: 0;\n",
+        "    }\n",
+        "\n",
+        "    .intro {\n",
+        "      background: #f2f6ff;\n",
+        "    }\n",
+        "\n",
+        "    img {\n",
+        "      display: block;\n",
+        "    }\n",
+        "\n",
+        "    a {\n",
+        "      color: #1a3d7c;\n",
+        "      text-decoration: none;\n",
+        "    }\n",
+        "\n",
+        "    a:hover {\n",
+        "      text-decoration: underline;\n",
+        "    }\n",
+        "\n",
+        "    .small {\n",
+        "      color: #666;\n",
+        "    }\n",
+        "  </style>\n",
+        "</head>\n",
+        "<body>\n",
+        "  <h1>わたしのポートフォリオ</h1>\n",
+        "  <p>はじめまして昭和女子大学3年のまひです</p>\n",
+        "\n",
+        "  <p>\n",
+        "    好きなサイト\n",
+        "    <a href=\"https://www.swu.ac.jp/\" target=\"_blank\">SWU</a>\n",
+        "  </p>\n",
+        "\n",
+        "  <img src=\"images/IMG_0179.HEIC\" alt=\"自己紹介の写真\" width=\"240\">\n",
+        "\n",
+        "  <h2>好きなこと</h2>\n",
+        "  <ul>\n",
+        "    <li>海外旅行</li>\n",
+        "    <li>散歩</li>\n",
+        "    <li>美術館や博物館巡り</li>\n",
+        "  </ul>\n",
+        "</body>\n",
+        "</html>\n",
+        "\n",
+        "<main>\n",
+        "    <section class=\"hero\">\n",
+        "      <h2>こんにちは！</h2>\n",
+        "      <p>\n",
+        "        このサイトは、HTML/CSSとPythonを学びながら作るポートフォリオです。\n",
+        "        これから作品を増やして更新していきます。\n",
+        "      </p>\n",
+        "\n",
+        "      <section id=\"contact\" class=\"section\">\n",
+        "      <h2>連絡先</h2>\n",
+        "      <p>連絡はSNSまたはメールでお願いします。</p>\n",
+        "      <ul>"
+      ],
+      "metadata": {
+        "colab": {
+          "resources": {
+            "http://localhost:8080/images/IMG_0179.HEIC": {
+              "data": "",
+              "ok": false,
+              "headers": [
+                [
+                  "content-length",
+                  "0"
+                ]
+              ],
+              "status": 404,
+              "status_text": ""
+            }
+          },
+          "base_uri": "https://localhost:8080/",
+          "height": 435
+        },
+        "id": "5PQ366WP94eC",
+        "outputId": "7294ed59-cae1-418c-8332-2cf57fd50fd6"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<!doctype html>\n",
+              "<html lang=\"ja\">\n",
+              "<head>\n",
+              "  <meta charset=\"utf-8\">\n",
+              "  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n",
+              "  <title>わたしのページ</title>\n",
+              "  <style>\n",
+              "    body {\n",
+              "      font-family: sans-serif;\n",
+              "      line-height: 1.7;\n",
+              "      color: #222;\n",
+              "    }\n",
+              "\n",
+              "    h1 {\n",
+              "      color: #1a3d7c;\n",
+              "    }\n",
+              "\n",
+              "    h2 {\n",
+              "      margin-top: 0;\n",
+              "    }\n",
+              "\n",
+              "    .intro {\n",
+              "      background: #f2f6ff;\n",
+              "    }\n",
+              "\n",
+              "    img {\n",
+              "      display: block;\n",
+              "    }\n",
+              "\n",
+              "    a {\n",
+              "      color: #1a3d7c;\n",
+              "      text-decoration: none;\n",
+              "    }\n",
+              "\n",
+              "    a:hover {\n",
+              "      text-decoration: underline;\n",
+              "    }\n",
+              "\n",
+              "    .small {\n",
+              "      color: #666;\n",
+              "    }\n",
+              "  </style>\n",
+              "</head>\n",
+              "<body>\n",
+              "  <h1>わたしのポートフォリオ</h1>\n",
+              "  <p>はじめまして昭和女子大学3年のまひです</p>\n",
+              "\n",
+              "  <p>\n",
+              "    好きなサイト\n",
+              "    <a href=\"https://www.swu.ac.jp/\" target=\"_blank\">SWU</a>\n",
+              "  </p>\n",
+              "\n",
+              "  <img src=\"images/IMG_0179.HEIC\" alt=\"自己紹介の写真\" width=\"240\">\n",
+              "\n",
+              "  <h2>好きなこと</h2>\n",
+              "  <ul>\n",
+              "    <li>海外旅行</li>\n",
+              "    <li>散歩</li>\n",
+              "    <li>美術館や博物館巡り</li>\n",
+              "  </ul>\n",
+              "</body>\n",
+              "</html>\n",
+              "\n",
+              "<main>\n",
+              "    <section class=\"hero\">\n",
+              "      <h2>こんにちは！</h2>\n",
+              "      <p>\n",
+              "        このサイトは、HTML/CSSとPythonを学びながら作るポートフォリオです。\n",
+              "        これから作品を増やして更新していきます。\n",
+              "      </p>\n",
+              "\n",
+              "      <section id=\"contact\" class=\"section\">\n",
+              "      <h2>連絡先</h2>\n",
+              "      <p>連絡はSNSまたはメールでお願いします。</p>\n",
+              "      <ul>\n"
+            ]
+          },
+          "metadata": {}
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Colab へようこそ",
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
