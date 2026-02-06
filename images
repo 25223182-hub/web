@@ -1,0 +1,131 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNnqEOAq7yg6o7ga6H/h9d1",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/25223182-hub/web/blob/main/images\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!pip -q install requests\n",
+        "import requests\n",
+        "\n",
+        "from google.colab import drive\n",
+        "drive.mount('/content/drive')\n",
+        "\n",
+        "import os\n",
+        "os.chdir(\"/content/drive/MyDrive/Colab Notebooks\")\n",
+        "print(\"現在の作業フォルダ:\", os.getcwd())\n",
+        "\n",
+        "URL = \"https://office.swu.ac.jp/albums/235/abm00018581.jpg\"\n",
+        "response = requests.get(URL)\n",
+        "print(response.status_code)\n",
+        "\n",
+        "filename = URL.split(\"/\")[-1]\n",
+        "with open(filename, mode=\"wb\") as f:\n",
+        "    f.write(response.content)\n",
+        "\n",
+        "print(\"保存しました:\", os.path.abspath(filename))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KM4XvqSz5E6I",
+        "outputId": "096403d1-0fd4-44c6-a057-a22166ac9913"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Mounted at /content/drive\n",
+            "現在の作業フォルダ: /content/drive/MyDrive/Colab Notebooks\n",
+            "200\n",
+            "保存しました: /content/drive/MyDrive/Colab Notebooks/abm00018581.jpg\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "https://drive.google.com/file/d/1BWwPlXXgL7s29cADu1ck2DSpLB9CI3Ma/view?usp=sharing"
+      ],
+      "metadata": {
+        "id": "MkihvWvA8Y2t"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!pip -q install requests\n",
+        "import requests\n",
+        "\n",
+        "from google.colab import drive\n",
+        "drive.mount('/content/drive')\n",
+        "\n",
+        "import os\n",
+        "os.chdir(\"/content/drive/MyDrive/Colab Notebooks\")\n",
+        "print(\"現在の作業フォルダ:\", os.getcwd())\n",
+        "\n",
+        "URL = \"https://drive.google.com/file/d/1BWwPlXXgL7s29cADu1ck2DSpLB9CI3Ma/view?usp=sharing.jpg\"\n",
+        "response = requests.get(URL)\n",
+        "print(response.status_code)\n",
+        "\n",
+        "filename = URL.split(\"/\")[-1]\n",
+        "with open(filename, mode=\"wb\") as f:\n",
+        "    f.write(response.content)\n",
+        "\n",
+        "print(\"保存しました:\", os.path.abspath(filename))\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "4fb1e067-80a0-4c88-d913-6c805a5f67df",
+        "id": "Ry301B9D8haw"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount(\"/content/drive\", force_remount=True).\n",
+            "現在の作業フォルダ: /content/drive/MyDrive/Colab Notebooks\n",
+            "401\n",
+            "保存しました: /content/drive/MyDrive/Colab Notebooks/view?usp=sharing.jpg\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
